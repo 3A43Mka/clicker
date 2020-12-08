@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+  only:
+  - master
+
+
+deploy:
+  provider: heroku
+  app: clickersuperapp
+  api_key:
+    secure: "68355376-0bfe-482b-91ef-d4d43d6e3538"
