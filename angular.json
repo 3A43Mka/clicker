@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "clicker"
+  "defaultProject": "clicker",
+  "cli": {
+    "analytics": "4856c751-9046-462b-a215-b9d0c8685696"
+  }
 }

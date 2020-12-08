@@ -1,0 +1,254 @@
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  height: 500px;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading {
+  text-transform: uppercase;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+.input-block {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input {
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  font-size: large;
+  transition: 0.5s;
+  outline: none;
+
+}
+
+.input:focus {
+  border-bottom: 5px solid #555;
+  border-radius: 10px;
+  background-color: rgb(248, 248, 248);
+}
+
+.input:hover {
+  border-bottom: 5px solid #555;
+  border-radius: 10px;
+  background-color: rgb(248, 248, 248);
+}
+
+.continue {
+  display: inline-block;
+  width: 18%;
+  margin-left: 2%;
+  padding: 11px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.continue:hover {
+  background-color: rgb(255, 96, 68);
+}
+
+.mode-button1 {
+  margin: 5px;
+  background-color: #b3ffb5;
+  /* Green */
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  outline: none;
+
+}
+
+.mode-button1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Параметры тени */
+  font-weight: 500;
+  transform: skew(0deg, 1deg) translate(5px, -5px) rotate(0.01turn);
+}
+
+.mode-button1:active {
+  background-color: white;
+  transform: scale(1.2, 0.8);
+
+}
+
+.mode-button2 {
+  margin: 5px;
+  background-color: #e8ffb3;
+  /* Green */
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  outline: none;
+
+}
+
+.mode-button2:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Параметры тени */
+  font-weight: 500;
+  transform: skew(0deg, -1deg) translate(5px, -5px) rotate(-0.01turn);
+}
+
+.mode-button2:active {
+  background-color: white;
+  transform: scale(1.2, 0.8);
+}
+
+.mode-button3 {
+  margin: 5px;
+  background-color: #ffb3b3;
+  /* Green */
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  outline: none;
+
+}
+
+.mode-button3:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Параметры тени */
+  font-weight: 500;
+  transform: skew(0deg, 1deg) translate(5px, -5px) rotate(0.01turn);
+}
+
+.mode-button3:active {
+  background-color: white;
+  transform: scale(1.2, 0.8);
+}
+
+
+.leftside {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+.rightside {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+
+}
+
+.clickbutton {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    border:10px solid #cfdcec;
+    overflow:hidden;
+    outline: none;
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+    transition: 0.3s;
+    font-size: large;
+    padding-top:40%;
+    padding-bottom:40%;
+     
+}
+
+  .clickbutton:active{
+      background-color:#7d9ac0;
+  }
+
+
+.clickbutton:hover {
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+  
+}
+
+.linkto {
+    text-decoration: none;
+    width: 200px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: large;
+    transition: 0.1s;
+    margin-right: 10px;
+}
+
+.linkto:hover {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    border-radius: 8px;
+}
+
+.linkto:visited {
+    text-decoration: none;
+}
+
+.resetButton {
+        background-color: #ff2a2a;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        transition: 0.5s;
+}
+
+.resetButton:disabled {
+    background-color: grey;
+}
+
+.resetButton:hover {
+    background-color: #ff6161;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}

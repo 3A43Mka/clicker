@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card">
+        <h2 class="heading">Hi! Please, provide your name:</h2>
+        <div class="input-block">
+            <input class="input" type="text" (keydown.enter)="onContinue()" [(ngModel)]="newName">
+            <button class="continue" (click)="onContinue()">Continue</button>        
+        </div>
+    </div>
+</div>

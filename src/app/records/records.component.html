@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <a class="linkto" routerLink="/game">Back to game</a>
+
+    <div class="buttonsblock">
+      <button class="mode-button" (click)="selectMode(5)">5 sec</button>
+      <button class="mode-button" (click)="selectMode(10)">10 sec</button>
+      <button class="mode-button" (click)="selectMode(15)">15 sec</button>
+    </div>
+
+    <div class="tableblock">
+      <table class="table">
+        <tr>
+          <th>Player</th>
+          <th>Clicks</th>
+        </tr>
+        <tr *ngFor="let record of recordsToShow">
+          <td>{{record.player}}</td>
+          <td>{{record.count}}</td>
+        </tr>
+      </table>
+    </div>
+<!-- 
+    <pre>
+        {{records | json}}
+    </pre> -->
+
+  </div>
+
+</div>

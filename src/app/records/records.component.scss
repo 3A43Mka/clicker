@@ -1,0 +1,97 @@
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  min-height: 400px;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.linkto {
+  text-decoration: none;
+  width: 200px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: large;
+  transition: 0.1s;
+  margin-right: 10px;
+}
+
+.linkto:hover {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+}
+
+.linkto:visited {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.tableblock {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.buttonsblock {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4e4e4e;
+  color: white;
+}
+
+.mode-button {
+  background-color: #ff2a2a;
+  width: 33%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 1px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.2s;
+  outline: none;
+}
+
+.mode-button:hover{
+  background-color: #ff5f5f;
+}
+
+.mode-button:active {
+  transform: scale(1.1,1.1);
+}

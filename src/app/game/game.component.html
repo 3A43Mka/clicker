@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <h2 class="heading">oh, hi {{playerName}}</h2>
+    <div class="leftside">
+        <h3>Choose One of the modes:</h3>
+        <button class="mode-button1" [disabled]="currentState != 'initial'" (click)="changeMode(5)">5 seconds</button>
+        <button class="mode-button2" [disabled]="currentState != 'initial'" (click)="changeMode(10)">10 seconds</button>
+        <button class="mode-button3" [disabled]="currentState != 'initial'" (click)="changeMode(15)">15 seconds</button>
+        <br>
+        
+    
+        <pre>Clicks: {{clickCount}}   Time: {{currentTime}}</pre>
+        <p>Time: {{currentTime}}</p>
+        <p>Previous record for {{currentMode}} sec is {{getRecordFor(currentMode)}}</p>
+    
+        <pre><a class="linkto" routerLink="/records">Table of records</a><a class="linkto" routerLink="/choose-name">Change Name</a></pre> 
+    
+        <p *ngIf="notificationString">{{notificationString}}</p>
+        <pre *ngIf="!notificationString"> </pre>
+    
+    </div>
+    <div class="rightside">
+        <button class="clickbutton" [disabled]="currentState == 'finished'" (click)="onClick()">
+            <span *ngIf="currentState == 'initial'">Click to Start</span>
+            <span *ngIf="(currentState == 'clicking') || (currentState == 'finished')">Click to Count</span>
+          </button>
+          <button class="resetButton" [disabled]="currentState != 'finished'" (click)="onReset()">Reset</button>
+    </div>
+  </div>
+</div>
