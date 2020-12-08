@@ -1,18 +1,14 @@
 language: node_js
 node_js:
 - '10'
-
 before_install:
 - npm install -g @angular/cli
 install: npm install
-
 branches:
   only:
   - master
-
-
 deploy:
   provider: heroku
   app: clickersuperapp
   api_key:
-    secure: "68355376-0bfe-482b-91ef-d4d43d6e3538"
+    secure: XIPICcIKg+BAS6x6791V7iXHewy3Vz9Nct55dcG2xiZDfchH2J1Wm8YneVRBkCPGTg6msCWi9kW7ESpDMJkiKSvCeHSrNHdHvjlVu0BK5ghCFRb+ol8/pUH+mc7v02zsLphAjmiUNhLArxz84qtcxQJgH+sBXExj3M0Gr4QWOxQNzTHyUqGgrr5puayvg5YunUUchva67mhPnbuitBxNDh2ZJA/KNzXzNbPBGTRSZppY6l8dLrkEG5PYk3MI6MFPNuMyqXBCwPhBCiQ5n6LKxp8aIg45S8CgAc2U6LJm3D0bcg8Nl1NTh7qxGLIYnrFkzwo9wGesxjbOVsKYG6SkujGlm/14PEhuHLSmt2EONSu3Rq060hV/zBafMhLYfIoYTTv8X5GOXCE4yYy/nD6Xd74VGjDb0CRlpXvPg9EIH2vp4IkgoIpeUNevHFNnlTlX9g5jOWFG4F1dY9zxKHz2YAZPBUqmWNC5UuyMcgqzX0yn6+gX2/9ebZoOya844iGCJy0Ru87001l8pynKiVhwu9OsUOdrC82hpyG7HnNZVcJMucwYdgxQCHBrqpvZIcu+zXDovlpKJ2vRsyXXNLomg49hLaKyDCBA8YeC3G2Xlt30ap5YsY5xYP24OwMWViUPInT66IwombLwiw/XXJnnGOAwh2ebN9cOW0u5QpjJ7VQ=
